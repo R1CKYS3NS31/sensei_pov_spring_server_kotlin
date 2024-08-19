@@ -1,7 +1,10 @@
 package com.example.pov_spring.config
 
+import com.example.pov_spring.model.PoV
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.security.config.annotation.ObjectPostProcessor
+import org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
 import org.springframework.security.core.userdetails.User
@@ -15,8 +18,10 @@ class SecurityConfig {
     @Bean
     fun filterChain(httpSecurity: HttpSecurity): SecurityFilterChain {
         httpSecurity.authorizeHttpRequests {
-            it.requestMatchers("/*","/api/povs/*").permitAll()
+//            it.requestMatchers("/*","/api/povs/*").permitAll()
+            it.anyRequest().permitAll() // ricky has bugs: unable to post
         }
+
         return httpSecurity.build()
     }
 

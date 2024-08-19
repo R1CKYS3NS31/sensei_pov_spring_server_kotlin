@@ -1,9 +1,9 @@
 package com.example.pov_spring.controller.pov
 
-import com.example.pov_spring.dto.PoVRequest
-import com.example.pov_spring.dto.PoVResponse
-import com.example.pov_spring.dto.toModel
-import com.example.pov_spring.dto.toResponse
+import com.example.pov_spring.dto.pov.PoVRequest
+import com.example.pov_spring.dto.pov.PoVResponse
+import com.example.pov_spring.dto.pov.toModel
+import com.example.pov_spring.dto.pov.toResponse
 import com.example.pov_spring.model.PoV
 import com.example.pov_spring.service.PoVService
 import kotlinx.coroutines.CoroutineDispatcher

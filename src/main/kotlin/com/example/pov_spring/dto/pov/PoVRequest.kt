@@ -1,4 +1,4 @@
-package com.example.pov_spring.dto
+package com.example.pov_spring.dto.pov
 
 import com.example.pov_spring.model.PoV
 
