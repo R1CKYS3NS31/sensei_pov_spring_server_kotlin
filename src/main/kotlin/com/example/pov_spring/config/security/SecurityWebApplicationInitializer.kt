@@ -1,4 +1,4 @@
-package com.example.pov_spring.config
+package com.example.pov_spring.config.security
 
 import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer
 
