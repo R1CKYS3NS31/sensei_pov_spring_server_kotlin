@@ -1,7 +1,7 @@
 --create table if not exists pov(
 -- id varchar(60) default random(uuid) primary key,
 -- title varchar(60) not null,
--- subtitle varchar(60) not null,
+-- author varchar(60) not null,
 -- points varchar not null,
 -- attachment varchar(60) not null,
 -- createdAt date not null,
