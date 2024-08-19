@@ -15,7 +15,7 @@ class SecurityConfig {
     @Bean
     fun filterChain(httpSecurity: HttpSecurity): SecurityFilterChain {
         httpSecurity.authorizeHttpRequests {
-            it.requestMatchers("/*","/api/povs").permitAll()
+            it.requestMatchers("/*","/api/povs/*").permitAll()
         }
         return httpSecurity.build()
     }
